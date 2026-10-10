@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vocational Course Registration</title>
+
+    </head>
+    <body>
+        <h1>Vocational Training Registration</h1>
+        <form>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required minlength="3">
+            <br><br>
+
+            <label for="emailAddress">Email:</label>
+            <input type="email" id="emailAddress" name="emailAddress" required>
+           <br><br>
+
+            <label for="userPassword">password</label>
+            <input type="password" id="userPassword" name="userPassword" required minlength="8">
+<br><br>
+
+
+            <p>Educational Level</p>
+            <input type="radio" id="eduHighschool" name="educationlevel" value="Highschool" required>
+            <label for="eduHighschool">High school</label>
+
+            <input type="radio" id="eduUniverstiy" name="educationlevel" value="universtiy">
+            <label for="eduUniverstiy">Universtiy</label>
+
+            <input type="radio" for="eduoOther" name="educationlevel" value="other">
+            <label for="eduoOther">Other</label>
+
+            <p>Which course do you want to participate in?</p>
+
+            <label for="vocationalCourse">Select a Course:</label>
+            <select id="vocationalCourse" name="vocationalCourse" required>
+            <option value="hair_styling">Hair Styling</option>
+            <option value="mobile_repair">Mobile repair</option>
+            <option value="car_mechanics">Car Mechanics</option>
+            </select>
+            <br><br>
+            <label for="experience">Do you have any previous experience?</label><br>
+        <textarea id="experience" name="experience" rows="4" cols="40" required minlength="10"></textarea>
+        <br><br>
+
+        <!-- مربع الموافقة (Checkbox) -->
+        <input type="checkbox" id="termsAgreement" name="termsAgreement" required>
+        <label for="termsAgreement">I agree to the center's rules and regulations</label>
+        <br><br>
+
+        <!-- زر الإرسال -->
+        <button type="submit">Submit Application</button>
+
+
+
+        </form>
+    </body>
+</html>
